@@ -57,7 +57,7 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <span className="text-sm text-zinc-500 dark:text-zinc-500 cursor-default">Track Order</span>
+                <span className="text-sm text-zinc-500 dark:text-zinc-500 cursor-default">Track Orders</span>
               </li>
               {/* <li>
                 <span className="text-sm text-zinc-500 dark:text-zinc-500 cursor-default">Preferences</span>
