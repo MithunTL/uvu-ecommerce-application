@@ -65,15 +65,15 @@ export function ProductCard({ product }: ProductCardProps) {
   return (
     <Link href={`/product/${product.id}`} className="group flex flex-col h-full bg-zinc-50 dark:bg-zinc-900/40 border border-zinc-200 dark:border-zinc-800 rounded-2xl overflow-hidden hover:shadow-xl dark:hover:shadow-2xl/10 hover:border-zinc-350 dark:hover:border-zinc-700 transition-all duration-300 transform hover:-translate-y-1">
       {/* Product Image */}
-      <div className="relative aspect-video w-full overflow-hidden bg-white dark:bg-zinc-950">
+      <div className="relative aspect-[4/3] w-full overflow-hidden bg-white dark:bg-zinc-950 p-2 flex items-center justify-center">
         <img
           src={product.mainImage}
           alt={product.name}
-          className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-500 ease-out"
+          className="object-contain w-full h-full transform group-hover:scale-105 transition-transform duration-500 ease-out"
           loading="lazy"
         />
         {product.stock <= 5 && (
-          <span className="absolute top-3 left-3 text-[10px] uppercase tracking-wider font-bold bg-red-500/10 text-red-650 dark:text-red-400 border border-red-500/20 px-2 py-0.5 rounded-full">
+          <span className="absolute top-3 left-3 text-[10px] uppercase tracking-wider font-bold bg-red-500/10 text-red-650 dark:text-red-400 border border-red-500/20 px-2 py-0.5 rounded-full z-10">
             Low Stock
           </span>
         )}
@@ -107,13 +107,13 @@ export function ProductCard({ product }: ProductCardProps) {
             disabled={product.stock === 0}
             className={`px-4 py-2 rounded-xl text-xs font-bold tracking-wide transition-all duration-200 cursor-pointer ${
               product.stock === 0
-                ? 'bg-zinc-200 text-zinc-500 dark:bg-zinc-800 dark:text-zinc-550 cursor-not-allowed'
+                ? 'bg-zinc-200 text-zinc-500 dark:bg-zinc-800 dark:text-zinc-500 cursor-not-allowed'
                 : isAdded
-                ? 'bg-emerald-650 text-white dark:bg-emerald-500'
-                : 'bg-zinc-950 text-white hover:bg-zinc-850 dark:bg-zinc-100 dark:text-zinc-955 dark:hover:bg-white hover:shadow-md'
+                ? 'bg-emerald-600 text-white dark:bg-emerald-600 shadow-sm'
+                : 'bg-zinc-950 text-white hover:bg-zinc-850 dark:bg-zinc-100 dark:text-zinc-950 dark:hover:bg-white hover:shadow-md'
             }`}
           >
-            {product.stock === 0 ? 'Out of Stock' : isAdded ? 'Added ✓' : 'Add to Cart'}
+            {product.stock === 0 ? 'Out of Stock' : isAdded ? 'Item Added ✓' : 'Add to Cart'}
           </button>
         </div>
       </div>

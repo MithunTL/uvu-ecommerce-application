@@ -26,14 +26,15 @@ export default function Home() {
       description: 'Power that fits on your desk',
       href: '/accessories?category=desktops',
       gradient: 'from-purple-600 to-pink-700 dark:from-purple-900/60 dark:to-pink-950/60',
-      image: 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=400&auto=format&fit=crop&q=80',
+      image: 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=400&auto=format&fit=crop&q=80',
     },
     {
       name: 'Accessories',
       description: 'Elevate your visual workflow',
       href: '#',
       gradient: 'from-amber-500 to-orange-600 dark:from-amber-900/60 dark:to-orange-950/60',
-      image: 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=400&auto=format&fit=crop&q=80',
+      image: 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=400&auto=format&fit=crop&q=80',
+
       isPlaceholder: true,
     },
   ];
@@ -133,7 +134,8 @@ export default function Home() {
       {/* Featured Products Section */}
       <section className="px-4 sm:px-6 lg:px-8 mb-24">
         <div className="max-w-[1280px] mx-auto px-4">
-          <div className="flex md:justify-end items-end mb-8">
+          <div className="flex md:justify-between items-end mb-8">
+            <h3 className="text-2xl font-black tracking-tight text-zinc-950 dark:text-zinc-50">Products</h3>
             <Link
               href="/accessories"
               className="text-sm font-bold text-zinc-950 hover:text-zinc-700 dark:text-zinc-100 dark:hover:text-zinc-300 flex items-center gap-1 group border-b border-zinc-900 dark:border-zinc-100 pb-0.5"

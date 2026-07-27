@@ -30,14 +30,10 @@ export function Header() {
           {/* Logo */}
           <div className="flex items-center flex-shrink-0">
             <Link href="/" className="flex items-center group">
-              <Image
+              <img
                 src="/logo-header.png"
                 alt="UVU | Dell Technologies | Terralogic"
-                width={384}
-                height={40}
-                priority
-                className="h-5 w-[192px] xs:h-6 xs:w-[230px] sm:h-7 sm:w-[269px] md:h-8 md:w-[307px] lg:h-9 lg:w-[345px] xl:h-10 xl:w-[384px] object-contain transition-all dark:bg-white dark:p-1 dark:rounded-lg"
-                style={{ imageRendering: '-webkit-optimize-contrast' }}
+                className="h-6 xs:h-7 sm:h-8 md:h-9 lg:h-10 w-auto object-contain transition-all dark:bg-white dark:px-2 dark:py-1 dark:rounded-lg"
               />
             </Link>
           </div>
