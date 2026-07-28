@@ -30,7 +30,7 @@ export interface Product {
 export const PRODUCTS: Product[] = [
   {
     id: 'dell-pro-7-14',
-    name: 'New Dell Pro 7 Series 14 2-in-1 Laptop',
+    name: 'Dell Pro 7 Series 14 2-in-1 Laptop',
     category: 'laptops',
     price: 2499,
     description: 'A premium, thin, and versatile 14-inch professional 2-in-1 laptop designed for high-performance multitasking and hybrid productivity. Supercharged by next-gen AMD Ryzen™ AI PRO processors and integrated Radeon™ Graphics, it features a durable aluminum design, a stunning 14" WUXGA touch display with active pen support, and advanced on-device AI capabilities with up to 50 TOPS NPUs.',
@@ -73,7 +73,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'dell-pro-5-14',
-    name: 'New Dell Pro 5 Series 14 Laptop',
+    name: 'Dell Pro 5 Series 14 Laptop',
     category: 'laptops',
     price: 2129,
     description: 'A high-performance professional laptop designed for advanced business productivity. Supercharged by next-gen AMD Ryzen™ AI processors and integrated Radeon™ Graphics, it features a premium aluminum design, long battery life, a 14" WUXGA touchscreen with 100% sRGB, and robust enterprise-grade security.',
@@ -115,7 +115,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'dell-pro-5-16',
-    name: 'New Dell Pro 5 Series 16 Laptop',
+    name: 'Dell Pro 5 Series 16 Laptop',
     category: 'laptops',
     price: 2089,
     description: 'A premium and highly secure 16-inch commercial laptop designed for advanced business productivity. Supercharged by next-gen AMD Ryzen™ AI PRO processors and integrated Radeon™ Graphics, it features a premium metallic design, long battery life, a 16" WUXGA display with a numeric keypad, and robust enterprise-grade security.',
@@ -156,7 +156,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'dell-pro-3-14',
-    name: 'New Dell Pro 3 Series 14 Laptop',
+    name: 'Dell Pro 3 Series 14 Laptop',
     category: 'laptops',
     price: 1499,
     description: 'A highly secure and manageable commercial laptop designed for reliable everyday productivity. Powered by next-gen AMD Ryzen™ AI PRO processors and integrated Radeon™ Graphics, it features a service-friendly design, long battery life, and robust enterprise-grade security.',
@@ -193,7 +193,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'dell-pro-3-16',
-    name: 'New Dell Pro 3 Series 16 Laptop',
+    name: 'Dell Pro 3 Series 16 Laptop',
     category: 'laptops',
     price: 1779,
     description: 'A spacious and powerful 16-inch commercial laptop designed for reliable business productivity. Supercharged by next-gen AMD Ryzen™ AI PRO processors and integrated Radeon™ Graphics, it features a service-friendly design, long battery life, a 16" WUXGA display with a numeric keypad, and robust enterprise-grade security.',

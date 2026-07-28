@@ -1,11 +1,22 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { PRODUCTS } from '@/data/products';
 import { ProductCard } from '@/components/ProductCard';
 
 export default function Home() {
+  useEffect(() => {
+    const target = window.sessionStorage.getItem('uvu-scroll-target');
+    if (!target) return;
+
+    const section = document.getElementById(target);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    window.sessionStorage.removeItem('uvu-scroll-target');
+  }, []);
   // Filter featured products to only include laptops and desktops (removing tablets and accessories)
   const featuredProducts = PRODUCTS.filter(
     (p) => p.category === 'laptops' || p.category === 'desktops'
@@ -52,7 +63,7 @@ export default function Home() {
               </span>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
                 Mind-blowing. <br />
-                <span className="bg-gradient-to-r from-zinc-950 to-zinc-650 dark:from-zinc-100 dark:to-zinc-400 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-zinc-950 to-zinc-200 dark:from-zinc-100 dark:to-zinc-400 bg-clip-text text-transparent">
                   Power-house.
                 </span>
               </h1>
@@ -66,12 +77,6 @@ export default function Home() {
                 >
                   Buy Now
                 </Link>
-                {/* <Link
-                href="/accessories"
-                className="px-8 py-3 rounded-full border border-zinc-300 dark:border-zinc-700 text-zinc-850 dark:text-white font-bold text-sm hover:bg-zinc-100 dark:hover:bg-zinc-900/60 transition-colors text-center"
-              >
-                Browse All Tech
-              </Link> */}
               </div>
             </div>
             <div className="relative aspect-video md:aspect-auto md:h-[400px] flex items-center justify-center">
@@ -153,7 +158,7 @@ export default function Home() {
       </section>
 
       {/* Value Propositions Grid (Apple style) */}
-      <section className="px-4 sm:px-6 lg:px-8 mb-28">
+      <section className="px-4 sm:px-6 lg:px-8 mb-28" id="uvu-care-warranty">
         <div className="max-w-[1280px] mx-auto px-4">
           <div className="grid  gap-8">
 

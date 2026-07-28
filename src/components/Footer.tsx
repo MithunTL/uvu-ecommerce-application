@@ -1,7 +1,28 @@
+'use client';
+
 import React from 'react';
 import Link from 'next/link';
+import { usePathname, useRouter } from 'next/navigation';
 
 export function Footer() {
+  const pathname = usePathname();
+  const router = useRouter();
+
+  const handleWarrantyClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+
+    if (pathname === '/') {
+      const section = document.getElementById('uvu-care-warranty');
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+      return;
+    }
+
+    window.sessionStorage.setItem('uvu-scroll-target', 'uvu-care-warranty');
+    router.push('/');
+  };
+
   return (
     <footer className="bg-zinc-50 dark:bg-zinc-950 border-t border-zinc-200 dark:border-zinc-900 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
@@ -35,17 +56,15 @@ export function Footer() {
             <h3 className="text-xs font-semibold text-zinc-400 dark:text-zinc-500 uppercase tracking-wider">Services</h3>
             <ul className="mt-4 space-y-2">
               <li>
-                <span className="text-sm text-zinc-500 dark:text-zinc-500 cursor-default">UVU Care+ Warranty</span>
+                <a
+                  href="/"
+                  onClick={handleWarrantyClick}
+                  className="text-sm text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors"
+                >
+                  UVU Care+ Warranty
+                </a>
               </li>
-              {/* <li>
-                <span className="text-sm text-zinc-500 dark:text-zinc-500 cursor-default">Easy Trade-in</span>
-              </li>
-              <li>
-                <span className="text-sm text-zinc-500 dark:text-zinc-500 cursor-default">Financing Options</span>
-              </li>
-              <li>
-                <span className="text-sm text-zinc-500 dark:text-zinc-500 cursor-default">Expert Setup & Support</span>
-              </li> */}
+             
             </ul>
           </div>
           <div>
@@ -57,7 +76,9 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <span className="text-sm text-zinc-500 dark:text-zinc-500 cursor-default">Track Orders</span>
+                <Link href="/orders" className="text-sm text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors">
+                  Track Orders
+                </Link>
               </li>
               {/* <li>
                 <span className="text-sm text-zinc-500 dark:text-zinc-500 cursor-default">Preferences</span>

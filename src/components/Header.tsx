@@ -33,7 +33,7 @@ export function Header() {
               <img
                 src="/logo-header.png"
                 alt="UVU | Dell Technologies | Terralogic"
-                className="h-6 xs:h-7 sm:h-8 md:h-9 lg:h-10 w-auto object-contain transition-all dark:bg-white dark:px-2 dark:py-1"
+                className="h-6 xs:h-7 sm:h-8 md:h-9 lg:h-10 w-auto object-contain transition-all dark:bg-white"
               />
             </Link>
           </div>

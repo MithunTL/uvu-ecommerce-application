@@ -293,7 +293,7 @@ function CartFlow() {
                     placeholder="PROMO CODE (UVU10)"
                     className="flex-1 px-3.5 py-2 text-xs font-bold rounded-xl border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-950 text-zinc-950 dark:text-white focus:outline-none uppercase"
                   />
-                  <button type="submit" className="px-4 py-2 rounded-xl bg-zinc-950 hover:bg-zinc-850 dark:bg-white dark:text-black dark:hover:bg-zinc-100 text-xs font-bold tracking-wide cursor-pointer">
+                  <button type="submit" className="px-4 py-2 rounded-xl bg-zinc-950 text-white hover:bg-zinc-850 dark:bg-white dark:text-black dark:hover:bg-zinc-100 text-xs font-bold tracking-wide cursor-pointer">
                     Apply
                   </button>
                 </div>
