@@ -6,6 +6,8 @@ import { CartProvider } from '@/context/CartContext';
 import { OrderProvider } from '@/context/OrderContext';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
+import { VisitorTracker } from '@/components/VisitorTracker';
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
   title: 'UVU Computer Shop | Premium Tech Store',
@@ -36,9 +38,14 @@ export default function RootLayout({
           <AuthProvider>
             <CartProvider>
               <OrderProvider>
-                <Header />
-                <main className="flex-1 flex flex-col">{children}</main>
-                <Footer />
+                <VisitorTracker>
+                  <Header />
+                  <main className="flex-1 flex flex-col">
+                    {children}
+                  </main>
+                  <Footer />
+                </VisitorTracker>
+                <Analytics />
               </OrderProvider>
             </CartProvider>
           </AuthProvider>
