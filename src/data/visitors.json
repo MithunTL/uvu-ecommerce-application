@@ -1,0 +1,52 @@
+[
+  {
+    "visitorId": "e185290a32c8cd0c5cd949b7f966d645",
+    "confidence": 0.5,
+    "address": "Sardarji Ka Dhaba, 67/7, Hosur Road, MCHS Colony, Sector 6, HSR Layout, Bengaluru South City Corporation, Bengaluru, Bangalore South, Bengaluru Urban, Karnataka, 560068, India",
+    "city": "Bengaluru",
+    "country": "India",
+    "ip": "125.99.254.132",
+    "timestamp": "2026-07-31T08:45:22.317Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  {
+    "visitorId": "e185290a32c8cd0c5cd949b7f966d645",
+    "confidence": 0.5,
+    "address": "Sardarji Ka Dhaba, 67/7, Hosur Road, MCHS Colony, Sector 6, HSR Layout, Bengaluru South City Corporation, Bengaluru, Bangalore South, Bengaluru Urban, Karnataka, 560068, India",
+    "city": "Bengaluru",
+    "country": "India",
+    "ip": "125.99.254.132",
+    "timestamp": "2026-07-31T08:03:51.539Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  {
+    "visitorId": "e185290a32c8cd0c5cd949b7f966d645",
+    "confidence": 0.5,
+    "address": "Sardarji Ka Dhaba, 67/7, Hosur Road, MCHS Colony, Sector 6, HSR Layout, Bengaluru South City Corporation, Bengaluru, Bangalore South, Bengaluru Urban, Karnataka, 560068, India",
+    "city": "Bengaluru",
+    "country": "India",
+    "ip": "125.99.254.132",
+    "timestamp": "2026-07-31T08:01:35.546Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  {
+    "visitorId": "e185290a32c8cd0c5cd949b7f966d645",
+    "confidence": 0.5,
+    "address": "Sardarji Ka Dhaba, 67/7, Hosur Road, MCHS Colony, Sector 6, HSR Layout, Bengaluru South City Corporation, Bengaluru, Bangalore South, Bengaluru Urban, Karnataka, 560068, India",
+    "city": "Bengaluru",
+    "country": "India",
+    "ip": "125.99.254.132",
+    "timestamp": "2026-07-31T07:59:30.235Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  {
+    "visitorId": "e185290a32c8cd0c5cd949b7f966d645",
+    "confidence": 0.5,
+    "address": "Sardarji Ka Dhaba, 67/7, Hosur Road, MCHS Colony, Sector 6, HSR Layout, Bengaluru South City Corporation, Bengaluru, Bangalore South, Bengaluru Urban, Karnataka, 560068, India",
+    "city": "Bengaluru",
+    "country": "India",
+    "ip": "125.99.254.132",
+    "timestamp": "2026-07-31T07:56:37.796Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  }
+]

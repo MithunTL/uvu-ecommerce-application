@@ -111,7 +111,7 @@ export function Footer() {
             <span className="hover:underline cursor-pointer">Privacy Policy</span>
             <span className="hover:underline cursor-pointer">Sales Policy</span>
             <span className="hover:underline cursor-pointer">Legal Documentation</span>
-            {/* <span className="hover:underline cursor-pointer">Site Map</span> */}
+            <Link href="/admin" className="hover:underline text-zinc-500 dark:text-zinc-400 font-semibold transition-colors">Admin Panel</Link>
           </div>
         </div>
       </div>
