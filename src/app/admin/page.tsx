@@ -317,11 +317,10 @@ export default function AdminPage() {
               Details of the latest 500 visitors.
             </p>
           </div>
-          
           {totalVisits === 0 ? (
             <div className="p-12 text-center text-zinc-500 dark:text-zinc-400">
               <p className="text-base font-semibold">No visitor logs found.</p>
-              <p className="text-sm mt-1">Open the main homepage at <Link href="/" className="underline text-zinc-800 dark:text-zinc-200">http://localhost:3001</Link> to log the first visit!</p>
+              <p className="text-sm mt-1">Open <Link href="/" className="underline text-zinc-800 dark:text-zinc-200 font-semibold">the main homepage</Link> to log the first visit!</p>
             </div>
           ) : (
             <div className="overflow-x-auto">
